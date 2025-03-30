@@ -1,0 +1,163 @@
+*{
+    margin:3px;
+}
+body{
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.container{
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px black;
+    position: relative;
+    overflow: hidden;
+    width: 400px;
+    height:240px;
+    padding: 35px;
+}
+.container:hover{
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+.container h1{
+  font-size: 34px;
+  text-align: center;
+}
+
+.container form{
+    padding: 15px;
+}
+#password{
+    margin-top: 10px;
+    margin-left: 60px;
+}
+#submit{
+    background-color: #0d6efd;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin-left: 80px;
+    margin-top: 20px;
+    width: 200px;
+}
+
+button:hover {
+    background-color: #0052cc;
+    transform: translateY(-2px);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+#Signup{
+    margin-top: 20px;
+    margin-left: 70px;
+}
+
+.alert {
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+.alert-success {
+    background-color: #d4edda;
+    color: #155724;
+}
+
+.alert-error {
+    background-color: #f8d7da;
+    color: #721c24;
+}
+
+
+
+
+
+/*body {
+    background-color: #f8f9fa;
+}
+
+.navbar {
+    margin-bottom: 2rem;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.card {
+    border: none;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    margin-bottom: 2rem;
+}
+
+.card-header {
+    background-color: #f8f9fa;
+    border-bottom: 1px solid #eee;
+    font-weight: bold;
+}
+
+.form-control:focus {
+    border-color: #0d6efd;
+    box-shadow: 0 0 0 0.25rem rgba(13,110,253,.25);
+}
+
+.btn-primary {
+    padding: 0.5rem 1.5rem;
+}
+
+.alert {
+    border: none;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.quiz-card {
+    transition: transform 0.2s;
+}
+
+.quiz-card:hover {
+    transform: translateY(-5px);
+}
+
+.question-container {
+    border: 1px solid #dee2e6;
+    border-radius: 4px;
+    padding: 1rem;
+    margin-bottom: 1rem;
+}
+
+.option-container {
+    margin: 0.5rem 0;
+}
+
+.score-display {
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+    color: #0d6efd;
+}
+
+.form-check {
+    margin: 0.5rem 0;
+    padding-left: 2rem;
+}
+
+.form-check-input:checked {
+    background-color: #0d6efd;
+    border-color: #0d6efd;
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding: 1rem;
+    }
+    
+    .card {
+        margin: 0.5rem 0;
+    }
+}*/

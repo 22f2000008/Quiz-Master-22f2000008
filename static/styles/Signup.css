@@ -1,0 +1,97 @@
+*{
+    margin: 3px;
+}
+
+body{
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.Container{
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px black;
+    width: 420px;
+    height: 330px;
+    padding: 35px;
+    position: relative;
+    overflow: hidden;
+}
+
+.Container:hover{
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    cursor: pointer;
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+.Container h1{
+    text-align: center;
+}
+
+.Container form{
+    padding: 30px;
+}
+
+#password{
+    margin-top: 10px;
+    margin-left: 60px;
+}
+
+#full_name{
+    margin-top: 10px;
+    margin-left: 53px;
+}
+
+#qualification{
+    margin-top: 10px;
+    margin-left: 35px;
+}
+
+#dob{
+    margin-top: 10px;
+    margin-left: 36px;
+}
+
+#submit{
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin-left: 80px;
+    margin-top: 15px;
+    width: 200px;
+}
+
+button:hover{
+    background-color: #45a049;
+    transition: translateY(-2px);
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+#Signup{
+    margin-top: 20px;
+    margin-left: 80px;
+}
+
+
+.alert {
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+.alert-success {
+    background-color: #d4edda;
+    color: #155724;
+}
+
+.alert-error {
+    background-color: #f8d7da;
+    color: #721c24;
+}

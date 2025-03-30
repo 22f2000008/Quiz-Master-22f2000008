@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles/login.css')}}">
+    <title>Login</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to Quiz_master</h1>
+
+
+        {% with messages = get_flashed_messages(with_categories=true) %}
+            {% if messages %}
+                <ul>
+                    {% for category, message in messages %}
+                        <li class="alert alert-{{ category }}">
+                            {{ message }}
+                        </li>
+                    {% endfor %}
+                </ul>
+            {% endif %}
+        {% endwith %}
+
+        
+        <form action="/login" method="POST">
+            <div>
+                <label for="username">Username(E-mail):</label>
+                <input type="text" id="username" name="user_name" placeholder="E-mail" required>
+            </div>
+            <div>
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" placeholder="password" required>
+            </div>
+            <button type="submit" id="submit">Login</button>
+            <div id="Signup">
+              <p>Create an account? <a href="/register">Signup</a></p>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

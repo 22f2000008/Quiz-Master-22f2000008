@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles/Signup.css')}}">
+    <title>Signup</title>
+</head>
+<body>
+    <div class="Container">
+        <h1>Welcome to Quiz_master</h1>
+        {% with messages = get_flashed_messages(with_categories=true) %}
+            {% if messages %}
+                <ul>
+                    {% for category, message in messages %}
+                        <li class="alert alert-{{ category }}">
+                            {{ message }}
+                        </li>
+                    {% endfor %}
+                </ul>
+            {% endif %}
+        {% endwith %}
+        <form action="/register" method="POST">
+            <div>
+                <label for="user_name">Username(E-mail):</label>
+                <input type="text" class="form-label" id="user_name" name="user_name" placeholder="E-mail" required>
+            </div>
+            <div>
+                <label for="password">Password:</label>
+                <input type="password" class="form-label"  id="password" name="password" placeholder="Password" required>
+            </div>
+            <div>
+                <label for="full_name">Full Name:</label>
+                <input type="text" class="form-label" id="full_name" name="full_name" placeholder="Full Name" required>
+            </div>
+            <div>
+                <label for="qualification">Qualification:</label>
+                <input type="text" class="form-label" id="qualification" name="qualification" placeholder="Qualification" required>
+            </div>
+            <div>
+                <label for="dob">Date of Birth:</label>
+                <input type="date" class="form-label" id="dob" name="dob" required>
+            </div>
+
+            {% if not admin_exists %}
+                <p><strong>You are creating the first Admin account.</strong></p>
+            {% endif %}
+            
+            <button id="submit"><a href="/login"></a>Submit</button>
+            <div id="Signup">
+                <p>Existing user? <a href="/login">Login</a></p>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
